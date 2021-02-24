@@ -1,0 +1,54 @@
+$color-primary: #8c1010 !default;
+$color-secondary: #0c101a !default;
+$color-tertiary: #ffff2c !default;
+$color-quaternary: #f7f2f3 !default;
+$color-quinary: #afaaa5 !default;
+
+$brand-colors: (
+  primary: $color-primary,
+  secondary: $color-secondary,
+  tertiary: $color-tertiary,
+  quaternary: $color-quaternary,
+  quinary: $color-quinary,
+) !default;
+
+$color-body: scale-color(
+  $color-quinary,
+  $lightness: -30%,
+  $saturation: -50%
+) !default;
+
+
+$colors: map-merge(
+  $brand-colors,
+  (
+    transparent: transparent,
+    light: #fff,
+    dark: #000,
+    light-gray: #555,
+    gray: #444,
+    dark-gray: #333
+  )
+);
+
+@function theme-color($key) {
+  @return map-get($colors, $key);
+}
+
+$unit: 8px;
+
+$font-family: "Ubuntu", "Spectral", "Segoe UI", Tahoma, Geneva, Verdana, serif, sans-serif;
+$strong-font-weight: 600 !default;
+$h1-font-size: 2.25rem !default;
+$h2-font-size: 1.95rem !default;
+$h3-font-size: 1.65rem !default;
+$h4-font-size: 1.35rem !default;
+$h5-font-size: 1.2rem !default;
+$text-font-size: 1rem !default;
+$lead-font-size: 3rem !default;
+
+$spacing: (
+  sm: 1rem,
+  md: 3rem,
+  lg: 6rem,
+) !default;

@@ -1,0 +1,48 @@
+@keyframes bounce {
+  50% { transform: translateY(-1rem); }
+}
+
+.navbar {
+  transition: transform 0.35s ease-out, background-color 0.25s ease-out;
+
+  .nav-wrapper {
+    transition: padding 0.25s ease-in-out;
+
+    .logo {
+      transition: height 0.35s ease-out, width 0.35s ease-out;
+    }
+
+    .menu-lines {
+      &,
+      &::before,
+      &::after {
+        transition: transform 0.25s ease-in-out;
+      }
+    }
+
+    nav {
+      transition: transform 0.25s ease-out;
+
+      a {
+        transition: color 0.25s ease-out;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1023px) {
+    nav {
+      transform: translateX(100%);
+      transition: transform 0.5s ease-in-out;
+
+      &.open { 
+        transform: translateX(0);
+      }
+    }
+  }
+}
+
+#home {
+  .arrow-down { 
+    animation: bounce 2s infinite;
+  }
+}

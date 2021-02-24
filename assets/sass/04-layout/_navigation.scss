@@ -1,0 +1,137 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  .nav-wrapper {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    @include flexContainer(row, space-between);
+
+    .logo {
+      height: 50px;
+      width: 50px;
+      z-index: 1;
+    }
+
+    .menu-btn {
+      height: 2rem;
+      width: 2rem;
+      @include flexContainer();
+      z-index: 1;
+
+      .menu-lines {
+        &, 
+        &::before, 
+        &::after {
+          height: 0.25rem;
+          width: 2rem;
+          background-color: theme-color(light);
+        }
+
+        &::before, 
+        &::after {
+          content: "";
+          display: block;
+          position: absolute;
+        }
+
+        &::before {
+          transform: translateY(-0.75rem);
+        }
+
+        &::after {
+          transform: translateY(0.75rem);
+        }
+      }
+
+      &.close {
+        .menu-lines {
+          transform: translateY(0.75rem);
+
+          &::before {
+            transform: translateY(-1rem) rotateZ(45deg);
+          }
+
+          &::after {
+            transform: translateY(-1rem) rotateZ(-45deg);
+          }
+        }
+      }
+    }
+
+    nav {
+      min-height: 100vh;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-color: theme-color(secondary);
+      z-index: 0;
+
+      a {
+        color: theme-color(quinary);
+
+        &:hover {
+          color: theme-color(light);
+        }
+      }
+    }
+  }
+
+  z-index: 1;
+
+  @media screen and (min-width: 768px) {
+    .nav-wrapper .logo {
+      height: 75px;
+      width: 75px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    @include flexContainer(row, space-between);
+
+    .nav-wrapper {   
+      .logo {
+        height: 100px;
+        width: 100px;
+      }
+
+      .menu-btn {
+        display: none;
+      }
+
+      nav {
+        display: block;
+        position: relative;
+        min-height: auto;
+        width: fit-content;
+        background-color: transparent;
+        
+        ul {
+          @include flexContainer();
+          
+          li {
+            margin-bottom: 0;
+
+            & + li {
+              margin-left: 3vw;
+            }
+
+            &.current {
+              &::before, 
+              &::after {
+                display: none;
+              }
+      
+              & a {
+                color: theme-color(light);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,90 @@
+$alignments: left, right, center !default;
+$breakpoints: 576, 768, 1024, 1440, 1920, 2560;
+$bgcolors: light, dark, light-gray, gray, dark-gray;
+
+@each $alignment in $alignments {
+  .text-align--#{$alignment} {
+    text-align: #{$alignment};
+  }
+}
+
+@mixin flexContainer($direction: row, $justify: center, $align: center) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin gridContainer($cols: 1fr, $rows: 1fr, $row-gap:0, $col-gap: 0) {
+  display: grid;
+  grid-template-columns: $cols;
+  grid-template-rows: $rows;
+  gap: $row-gap $col-gap;
+
+}
+@mixin mediaQueries($image) {
+  @each $breakpoint in $breakpoints {
+    @media screen and (min-width: #{$breakpoint}px) {
+      background-image: url("../../images/#{$image}-#{$breakpoint}w.jpg");
+    }
+  }
+}
+
+@mixin backgroundImage($url, $x-position: center) {
+  background-image: url($url);
+  background-position-x: $x-position;
+  background-size: cover;
+}
+
+@each $color in $bgcolors {
+  .bg--#{$color} {
+    background-color: theme-color($color);
+  }
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@each $key, $unit in $spacing {
+  .mx-#{$key} {
+    margin-left: $unit;
+    margin-right: $unit;
+  }
+
+  .my-#{$key} {
+    margin-top: $unit;
+    margin-bottom: $unit;
+  }
+
+  .mt-#{$key} {
+    margin-top: $unit;
+  }
+
+  .mb-#{$key} {
+    margin-bottom: $unit;
+  }
+
+  .px-#{$key} {
+    padding-left: $unit;
+    padding-right: $unit;
+  }
+
+  .py-#{$key} {
+    padding-top: $unit;
+    padding-bottom: $unit;
+  }
+
+  .pt-#{$key} {
+    padding-top: $unit;
+  }
+
+  .pb-#{$key} {
+    padding-bottom: $unit;
+  }
+}
+
+.mb-none {
+  margin-bottom: 0;
+}

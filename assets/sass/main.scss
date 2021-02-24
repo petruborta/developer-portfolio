@@ -1,0 +1,21 @@
+@import "00-utilities/variables";
+@import "00-utilities/mixins";
+
+@import "01-core/typography";
+@import "01-core/reset";
+
+@import "02-animations/animations";
+
+@import "03-components/buttons";
+@import "03-components/forms";
+@import "03-components/lists";
+
+@import "04-layout/containers";
+@import "04-layout/navigation";
+@import "04-layout/footer";
+
+@import "05-sections/home";
+@import "05-sections/about";
+@import "05-sections/skills";
+@import "05-sections/projects";
+@import "05-sections/contact";

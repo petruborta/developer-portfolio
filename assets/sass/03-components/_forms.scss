@@ -1,0 +1,28 @@
+label {
+  font-family: $font-family;
+  color: theme-color(quaternary);
+  font-weight: 700;
+  font-size: $lead-font-size * 0.75;
+  @include flexContainer(column, center, flex-start);
+
+  input,
+  textarea {
+    font-family: $font-family;
+    width: 100%;
+    min-height: 44px;
+    border: 1px solid scale-color(theme-color(quinary), $lightness: 10%);
+    border-radius: $unit;
+    padding: 0.25em 0.5em;
+    margin-bottom: 1rem;
+    color: theme-color(dark);
+    background-color: theme-color(quinary);
+    transition: 200ms box-shadow ease-in-out, 200ms background-color ease-in-out;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px scale-color(theme-color(secondary), $lightness: 30%);
+      background-color: theme-color(light);
+    }
+  }
+}

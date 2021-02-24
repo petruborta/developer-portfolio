@@ -1,0 +1,28 @@
+#home {
+  min-height: 100vh;
+  background-color: theme-color(dark-gray);
+
+  .container {
+    position: relative;
+    min-height: 100vh;
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .arrow-down {
+    width: fit-content;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 1rem;
+
+    .fas {
+      font-size: $h2-font-size;
+    }
+  }
+}
