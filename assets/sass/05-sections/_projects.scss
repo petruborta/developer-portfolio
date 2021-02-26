@@ -1,3 +1,23 @@
 #projects {
+  p.technologies {
+    margin-top: 0.5rem;
+  }
 
+  @media screen and (min-width: 1024px) {
+    .project:nth-child(odd) {
+      @include gridContainer(600px 1fr, auto, 0, 2rem);
+    }
+    
+    .project:nth-child(even) {
+      @include gridContainer(1fr 600px, auto, 0, 2rem);
+
+      .img-container {
+        grid-area: 1 / 2 / 2 / 3;
+      }
+
+      .description {
+        grid-area: 1 / 1 / 2 / 2;
+      }
+    }
+  }
 }

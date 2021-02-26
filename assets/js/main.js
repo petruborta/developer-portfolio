@@ -28,13 +28,13 @@ function handleScroll() {
         transform(navBar, "translateY(-100%)");
       }
     } else {
-      setHeightAndWidth(logo, "75px");
+      setHeightAndWidth(logo, "50px");
     }
   } else {
     if (onTablet()) {
       transform(navBar, "translateY(0)");
     } else {
-      setHeightAndWidth(logo, "100px");
+      setHeightAndWidth(logo, "75px");
     }
   }
 
@@ -55,7 +55,7 @@ function handleResize() {
     }
 
     transform(navBar, "translateY(0)");
-    setHeightAndWidth(logo, "100px");
+    setHeightAndWidth(logo, "75px");
   }
 }
 

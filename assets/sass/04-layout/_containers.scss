@@ -3,14 +3,14 @@
 
   @media screen and (min-width: 768px) {
     max-width: 800px;
+
+    .cto-content {
+      @include flexContainer(row, space-between);
+    }
   }
 
-  @media screen and (min-width: 1440px) {
-    max-width: 1200px;
-  }
-
-  @media screen and (min-width: 1920px) {
-    max-width: 1500px;
+  @media screen and (min-width: 1024px) {
+    max-width: 1000px;
   }
 }
 
@@ -22,10 +22,25 @@
   @include flexContainer(column);
 }
 
+.links-container {
+  @include flexContainer(row, flex-start);
+  flex-wrap: wrap;
+
+  .button:first-child {
+    margin-right: 0.5rem;
+  }
+}
+
 .img-container {
-  position: relative;
   height: 0;
+  position: relative;
+  border-radius: $unit;
+  background-color: theme-color(quaternary);
   overflow: hidden;
+
+  &--about {
+    padding-bottom: 88.69%;
+  }
 
   &--skill {
     padding-bottom: 50%;
@@ -33,21 +48,45 @@
 
   &--project {
     padding-bottom: 55.55%;
+    cursor: pointer;
+
+    &::before {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background-color: theme-color(dark);
+      opacity: 0;
+      z-index: 1;
+    }
+
+    &:hover:before,
+    &:hover .strong {
+      opacity: 0.8;
+    }
   }
 
   img {
+    color: theme-color(dark);
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
   }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    opacity: 0;
+    z-index: 2;
+  }
 }
 
 .section {
-  @media screen and (min-width: 768px) {
-    padding-top: 3rem;
-  }
+  padding: 3rem 0;
 
   @media screen and (min-width: 1024px) {
     padding-top: 6rem;

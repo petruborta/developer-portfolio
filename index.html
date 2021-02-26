@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
+    <meta name="description" content="Portfolio website of web developer Petru Borta">
     <title>Petru Borta | Web Developer</title>
     <link rel="shortcut icon" href="assets/images/petruborta-logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -16,7 +16,7 @@
   <body>
     <div class="navbar">
       <div class="nav-wrapper">
-        <div class="logo img-container">
+        <div class="logo">
           <a href="#home">
             <img src="./assets/images/petruborta-logo.png" alt="Petru Borta brand logo" title="Logo vector created by starline - www.freepik.com">
           </a>
@@ -36,255 +36,334 @@
       </div>
     </div>
 
-    <header id="home" class="">
+    <header id="home" class="bg--gray">
       <div class="container mx-auto">
         <div class="hero-text">
           <span>Hello, my name is</span>
           <h1 class="lead">Petru <span>Borta</span></h1>
           <h2 class="sublead">And I'm a Web Developer</h2>
-          <a href="#contact">GET IN TOUCH</a>
+          <a class="button" href="#contact">GET IN TOUCH</a>
         </div>
       </div>
       
-      <a class="arrow-down mx-auto" href="#about">
+      <a class="arrow-down mx-auto text-align--center" href="#about">
+        more about me<br>
         <i class="fas fa-angle-double-down"></i>
       </a>
     </header>
 
-    <main id="about">
-      <div class="container">
-        <h1></h1>
-        <p></p>
-        <div>
-          <div>
-            <img src="" alt="">
-          </div>
+    <main id="about" class="section bg--dark-gray">
+      <div class="container mx-auto">
+        <h1>About me</h1>
+        <p>Get to know me</p>
+        <div class="grid">
+          <figure class="img-container img-container--about mb-sm">
+            <img src="" alt="Picture of me">
+          </figure>
           <div>
             <div>
-              <span></span>
-              <h2></h2>
-              <p></p> 
+              <span>Who I am?</span>
+              <h2>I'm Petru Borta, a Web Developer</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque 
+                corporis, dicta neque debitis. Qui molestias facere eum aliquam vero reiciendis temporibus facilis ut in. 
+                Nobis, ad rem magnam quo repellendus error quia.</p> 
             </div>
-            <div>
-              <a href="resume.pdf" download="Petru_Borta_-_Resume_-_Web_Developer.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
-              <a href="#projects">My Work</a>
+            <div class="links-container">
+              <a class="button" href="resume.pdf" download="Petru_Borta_-_Resume_-_Web_Developer.pdf" target="_blank" rel="noopener noreferrer">Download resume</a>
+              <a class="button" href="#projects">My Work</a>
             </div>
           </div>
         </div>
       </div>
     </main>
 
-    <section id="skills">
-      <div class="container">
+    <section id="skills" class="section bg--gray">
+      <div class="container mx-auto">
         <h1>SKILLS</h1>
-        <p></p>
-        <div>
-          <div class="skill">
-            <div class="img-container img-container--skill">
+        <p>Lorem ipsum dolor sit amet.</p>
+        <div class="grid">
+          <div class="skill mb-md">
+            <figure class="img-container img-container--skill mb-sm">
               <img 
                 srcset="assets/images/html-css-js-350w.png 350w, 
                   assets/images/html-css-js-700w.png 700w" 
                 sizes="(min-width: 1024px) 700px, 
                   350px" 
                 src="./assets/images/html-css-js-350w.png" 
-                alt=""
+                alt="HTML, CSS and JS logoes"
               >
-            </div>
+            </figure>
             <div>
               <h2>Front End Development</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
             </div>
           </div>
-          <div class="skill">
-            <div class="img-container img-container--skill">
+          <div class="skill mb-md">
+            <figure class="img-container img-container--skill mb-sm">
               <img 
                 srcset="assets/images/react-350w.png 350w, 
                   assets/images/react-700w.png 700w" 
                 sizes="(min-width: 1024px) 700px, 
                   350px" 
                 src="./assets/images/react-350w.png" 
-                alt=""
+                alt="React logo"
               >
-            </div>
+            </figure>
             <div>
               <h2>React Development</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
             </div>
           </div>
-          <div class="skill">
-            <div class="img-container img-container--skill">
+          <div class="skill mb-md">
+            <figure class="img-container img-container--skill mb-sm">
               <img 
                 srcset="assets/images/mern-stack-350w.png 350w, 
                   assets/images/mern-stack-700w.png 700w" 
                 sizes="(min-width: 1024px) 700px, 
                   350px" 
                 src="./assets/images/mern-stack-350w.png" 
-                alt=""
+                alt="MongoDB, Express, React and Node logoes"
               >
-            </div>
+            </figure>
             <div>
               <h2>Full Stack Web Development</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
             </div>
           </div>
-          <div class="skill">
-            <div class="img-container img-container--skill">
+          <div class="skill mb-md">
+            <figure class="img-container img-container--skill mb-sm">
               <img 
                 srcset="assets/images/sql-nosql-350w.png 350w, 
                   assets/images/sql-nosql-700w.png 700w" 
                 sizes="(min-width: 1024px) 700px, 
                   350px" 
                 src="./assets/images/sql-nosql-350w.png" 
-                alt=""
+                alt="SQL and NoSQL concepts illustrated"
               >
-            </div>
+            </figure>
             <div>
               <h2>Database Development</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
             </div>
           </div>
-          <div class="skill">
-            <div class="img-container img-container--skill">
+          <div class="skill mb-md">
+            <figure class="img-container img-container--skill mb-sm">
               <img 
                 srcset="assets/images/git-github-350w.png 350w, 
                   assets/images/git-github-700w.png 700w" 
                 sizes="(min-width: 1024px) 700px, 
                   350px" 
                 src="./assets/images/git-github-350w.png" 
-                alt=""
+                alt="Git and GitHub logoes"
               >
-            </div>
+            </figure>
             <div>
               <h2>Source Control</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
             </div>
           </div>
-          <div class="skill">
-            <div class="img-container img-container--skill">
+          <div class="skill mb-md">
+            <figure class="img-container img-container--skill mb-sm">
               <img 
                 srcset="assets/images/aws-350w.png 350w, 
                   assets/images/aws-700w.png 700w" 
                 sizes="(min-width: 1024px) 700px, 
                   350px" 
                 src="./assets/images/aws-350w.png" 
-                alt=""
+                alt="AWS (Amazon Web Services) logo"
               >
-            </div>
+            </figure>
             <div>
               <h2>Cloud Computing</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="cto-banner">
-      <div class="container">
-        <div>
-          <h1></h1>
-          <p></p>
+    <section class="cto-banner py-md bg--dark">
+      <div class="container mx-auto">
+        <div class="cto-content">
+          <div class="cto-text">
+            <h1>Let's work together</h1>
+            <p>I am available for new exciting projects at any time</p>
+          </div>
+          <a class="button" href="#contact">Hire me</a>
         </div>
-        <a href="#contact"></a>
       </div>
     </section>
 
-    <section id="projects">
-      <div class="container">
-        <h1></h1>
-        <p></p>
+    <section id="projects" class="section bg--gray">
+      <div class="container mx-auto">
+        <h1>PROJECTS</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, officia?</p>
         <div>
-          <div class="project">
-            <div class="img-container img-container--project">
+          <div class="project mb-md">
+            <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/images/hotpizza-540w.jpg" alt="">
+                <span class="strong">Live Demo</span>
+                <img src="./assets/images/hotpizza-1440w.jpg" alt="HOTPIZZA main page">
               </a>
-            </div>
-            <div>
+            </figure>
+            <div class="description">
               <h2>HOTPIZZA</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
               <hr>
-              <p><span>Technologies:</span></p>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                Visit Project <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/petruborta/landing-page" target="_blank" rel="noopener noreferrer">
-                View Code <i class="fab fa-github"></i>
-              </a>
+              <p class="technologies">
+                <span class="strong">Technologies: </span>
+                HTML, JS, SASS, Google Maps JS API
+              </p>
+              <div class="links-container">
+                <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
+                  Project <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a class="button" href="https://github.com/petruborta/landing-page" target="_blank" rel="noopener noreferrer">
+                  Code <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
-          <div class="project">
-            <div class="img-container img-container--project">
+          <div class="project mb-md">
+            <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/images/lion-real-estate-540w.jpg" alt="">
+                <span class="strong">Live Demo</span>
+                <img src="./assets/images/lion-real-estate-1440w.jpg" alt="Lion Real Estate main page">
               </a>
-            </div>
-            <div>
+            </figure>
+            <div class="description">
               <h2>LION REAL ESTATE</h2>
-              <p></p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
               <hr>
-              <p><span>Technologies:</span></p>
+              <p class="technologies">
+                <span class="strong">Technologies: </span>
+                HTML, CSS, JS, Realtor API, D3.js
+              </p>
+              <div class="links-container">
+                <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
+                  Project <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a class="button" href="https://github.com/petruborta/real-estate-agency" target="_blank" rel="noopener noreferrer">
+                  Code <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="project mb-md">
+            <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                Visit Project <i class="fas fa-external-link-alt"></i>
+                <span class="strong">Live Demo</span>
+                <img src="./assets/images/bookshelves-1440w.jpg" alt="Bookshelves main page">
               </a>
-              <a href="https://github.com/petruborta/real-estate-agency" target="_blank" rel="noopener noreferrer">
-                View Code <i class="fab fa-github"></i>
-              </a>
+            </figure>
+            <div class="description">
+              <h2>BOOKSHELVES</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <hr>
+              <p class="technologies">
+                <span class="strong">Technologies: </span>
+                HTML, CSS, JS, MongoDB Atlas, Express.js, React.js, Node.js, Google Books API, AWS EC2
+              </p>
+              <div class="links-container">
+                <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
+                  Project <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a class="button" href="https://github.com/petruborta/mern-bookshelves" target="_blank" rel="noopener noreferrer">
+                  Code <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
           <div class="project">
-            <div class="img-container img-container--project">
+            <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
-                <img src="./assets/images/bookshelves-540w.jpg" alt="">
+                <span class="strong">Live Demo</span>
+                <img src="" alt="My portfolio website main page">
               </a>
-            </div>
-            <div>
-              <h2>BOOKSHELVES</h2>
-              <p></p>
+            </figure>
+            <div class="description">
+              <h2>MY PORTFOLIO</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
               <hr>
-              <p><span>Technologies:</span></p>
-              <a href="http://" target="_blank" rel="noopener noreferrer">
-                Visit Project <i class="fas fa-external-link-alt"></i>
-              </a>
-              <a href="https://github.com/petruborta/mern-bookshelves" target="_blank" rel="noopener noreferrer">
-                View Code <i class="fab fa-github"></i>
-              </a>
+              <p class="technologies">
+                <span class="strong">Technologies: </span>
+                HTML, JS, SASS, AWS Lambda and SES
+              </p>
+              <div class="links-container">
+                <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
+                  Project <i class="fas fa-external-link-alt"></i>
+                </a>
+                <a class="button" href="https://github.com/petruborta/developer-portfolio" target="_blank" rel="noopener noreferrer">
+                  Code <i class="fab fa-github"></i>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact">
-      <div class="container">
-        <h1></h1>
-        <p></p>
-        <div>
-
-        </div>
+    <section id="contact" class="section bg--dark-gray">
+      <div class="contact mx-auto">
+        <h1>GET IN TOUCH</h1>
+        <p>Feel free to contact me at any time</p>
+        <form class="contact-form" action="submit.php" method="POST">
+          <div class="name-and-email">
+            <label for="name">Name
+              <input type="text" name="name" required>
+            </label>
+            <label for="email">Email
+              <input type="email" name="email" required>
+            </label>
+          </div>
+          <label for="subject">Subject
+            <input type="text" name="subject" required>
+          </label>
+          <label for="message">Message
+            <div class="textarea-wrapper">
+              <textarea name="message" cols="30" rows="10" maxlength="1000" required></textarea>
+            </div>
+          </label>
+          <label for="human">What is 2+2? (Anti-spam)
+            <input type="text" name="human" required>
+          </label>
+          <p class="toast strong"></p>
+          <button class="submit" type="submit" name="submit" >Send message</button>
+        </form>
       </div>
     </section>
 
-    <footer class="">
-      <div class="container">
-        <div>
-          <div>
-            <i class="fas fa-map-marked-alt"></i>
+    <footer class="section bg--dark">
+      <div class="container mx-auto">
+        <div class="contact mb-md">
+          <div class="flex-column mb-sm">
+            <i class="fas fa-map-marked-alt contact"></i>
             <span>London, England, UK</span>
           </div>
-          <div>
-            <i class="fas fa-phone"></i>
+          <div class="flex-column mb-sm">
+            <i class="fas fa-phone contact"></i>
             <a href="tel:+447832946403">783.294.6403</a>
           </div>
-          <div>
-            <i class="fas fa-paper-plane"></i>
+          <div class="flex-column mb-sm">
+            <i class="fas fa-paper-plane contact"></i>
             <a href="mailto:petru.borta.p@gmail.com">petru.borta.t@gmail.com</a>
           </div>
         </div>
-        <div>
-          <div class="social">
-            <a href="https://www.linkedin.com/in/petruborta" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/petruborta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square"></i></a>
+        <div class="text-align--center">
+          <div class="social mb-sm">
+            <a class="flex-row" href="https://www.linkedin.com/in/petruborta" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin social"></i>LinkedIn</a>
+            <a class="flex-row" href="https://github.com/petruborta" target="_blank" rel="noopener noreferrer"><i class="fab fa-github-square social"></i>GitHub</a>
           </div>
           <span class="copyright">&copy; 2021 PETRU BORTA. ALL RIGHTS RESERVED.</span>
         </div>
@@ -292,5 +371,6 @@
     </footer>
 
     <script src="assets/js/main.js"></script>
+    <script type="module" src="assets/js/contactForm.js"></script>
   </body>
 </html>

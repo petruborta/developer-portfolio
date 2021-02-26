@@ -1,3 +1,20 @@
 #contact {
+  .contact {
+    padding: 0 1rem;
+
+    @media screen and (min-width: 768px) {
+      max-width: 600px;
+    }
   
+    @media screen and (min-width: 1440px) {
+      .name-and-email {
+        @include flexContainer(row, space-between);
+
+        label {
+          flex: 0 49%;
+        }
+      }
+      max-width: 800px;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 $alignments: left, right, center !default;
 $breakpoints: 576, 768, 1024, 1440, 1920, 2560;
-$bgcolors: light, dark, light-gray, gray, dark-gray;
+$bgcolors: transparent, light, dark, light-gray, gray, dark-gray;
 
 @each $alignment in $alignments {
   .text-align--#{$alignment} {

@@ -1,5 +1,15 @@
 @keyframes bounce {
-  50% { transform: translateY(-1rem); }
+  50% { transform: translateY(1rem); }
+}
+
+input,
+textarea {
+  transition: 200ms box-shadow ease-in-out, 200ms background-color ease-in-out;
+}
+
+button,
+.button {
+  transition: 180ms all ease-in-out;
 }
 
 .navbar {
@@ -42,7 +52,21 @@
 }
 
 #home {
-  .arrow-down { 
+  .arrow-down .fas { 
     animation: bounce 2s infinite;
+  }
+}
+
+.img-container--project {
+  &::before,
+  & .strong {
+    transition: opacity 0.15s ease-in-out;
+  }
+}
+
+footer {
+  .fas,
+  .flex-row {
+    transition: color 0.25s ease-in-out;
   }
 }

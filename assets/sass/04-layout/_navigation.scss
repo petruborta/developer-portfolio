@@ -22,15 +22,15 @@
       z-index: 1;
 
       .menu-lines {
-        &, 
-        &::before, 
+        &,
+        &::before,
         &::after {
           height: 0.25rem;
           width: 2rem;
           background-color: theme-color(light);
         }
 
-        &::before, 
+        &::before,
         &::after {
           content: "";
           display: block;
@@ -92,12 +92,7 @@
   @media screen and (min-width: 1024px) {
     @include flexContainer(row, space-between);
 
-    .nav-wrapper {   
-      .logo {
-        height: 100px;
-        width: 100px;
-      }
-
+    .nav-wrapper {
       .menu-btn {
         display: none;
       }
@@ -108,10 +103,10 @@
         min-height: auto;
         width: fit-content;
         background-color: transparent;
-        
+
         ul {
           @include flexContainer();
-          
+
           li {
             margin-bottom: 0;
 
@@ -120,11 +115,11 @@
             }
 
             &.current {
-              &::before, 
+              &::before,
               &::after {
                 display: none;
               }
-      
+
               & a {
                 color: theme-color(light);
               }

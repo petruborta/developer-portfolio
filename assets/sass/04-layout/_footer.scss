@@ -1,3 +1,31 @@
 footer {
-  
+  .fab, .fas {
+    margin: 0.5rem;
+  }
+
+  .contact {
+    @include flexContainer;
+    flex-wrap: wrap;
+
+    .flex-column {
+      margin: 0 1rem;
+      color: theme-color(light);
+
+      &:hover .fas {
+        color: theme-color(light);
+      }
+    }
+  }
+
+  .social {
+    @include flexContainer;
+    
+    .flex-row:hover {
+      color: theme-color(quinary);
+    }
+
+    .flex-row:first-child {
+      margin-right: 1rem;
+    }
+  }
 }

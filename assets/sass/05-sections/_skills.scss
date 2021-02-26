@@ -1,3 +1,13 @@
 #skills {
+  @media screen and (min-width: 768px) {
+    .grid {
+      @include gridContainer(repeat(2, 1fr), repeat(3, auto), 0, 1rem);
+    }
+  }
 
+  @media screen and (min-width: 1024px) {
+    .grid {
+      @include gridContainer(repeat(3, 1fr), repeat(2, auto), 0, 1rem);
+    }
+  }
 }
