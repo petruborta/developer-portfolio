@@ -13,16 +13,16 @@ label {
 
   input,
   textarea {
-    font-family: $font-family;
     width: 100%;
     min-height: 44px;
     border: none;
     border-radius: $unit;
-    color: theme-color(dark);
     background-color: theme-color(quinary);
+    transition: 200ms box-shadow ease-in-out, 200ms background-color ease-in-out;
 
     &:hover,
     &:focus {
+      box-shadow: 0 0 0 3px solid theme-color(quinary);
       background-color: theme-color(light);
     }
   }

@@ -26,11 +26,11 @@
         </div>
         <nav class="flex-row">
           <ul class="list-unstyled text-align--center">
-            <li><a href="#home">HOME</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#skills">SKILLS</a></li>
-            <li><a href="#projects">PROJECTS</a></li>
-            <li><a href="#contact">CONTACT</a></li>
+            <li class="menu-item current"><a href="#home">HOME</a></li>
+            <li class="menu-item"><a href="#about">ABOUT</a></li>
+            <li class="menu-item"><a href="#skills">SKILLS</a></li>
+            <li class="menu-item"><a href="#projects">PROJECTS</a></li>
+            <li class="menu-item"><a href="#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -56,14 +56,20 @@
       <div class="container mx-auto">
         <h1>About me</h1>
         <p>Get to know me</p>
-        <div class="grid">
-          <figure class="img-container img-container--about mb-sm">
-            <img src="" alt="Picture of me">
-          </figure>
+        <div class="grid pt-md">
+          <div class="img-wrapper mb-md">
+            <figure class="img-container img-container--about">
+              <img src="./assets/images/about-me-img.jpg" alt="Picture of me">
+            </figure>
+          </div>
           <div>
             <div>
-              <span>Who I am?</span>
+              <span>Who am I?</span>
               <h2>I'm Petru Borta, a Web Developer</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
+                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque 
+                corporis, dicta neque debitis. Qui molestias facere eum aliquam vero reiciendis temporibus facilis ut in. 
+                Nobis, ad rem magnam quo repellendus error quia.</p> 
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
                 voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque 
                 corporis, dicta neque debitis. Qui molestias facere eum aliquam vero reiciendis temporibus facilis ut in. 
@@ -81,108 +87,68 @@
     <section id="skills" class="section bg--gray">
       <div class="container mx-auto">
         <h1>SKILLS</h1>
-        <p>Lorem ipsum dolor sit amet.</p>
-        <div class="grid">
+        <p>I'm a creative problem solver. I build websites and fullstack web applications. I use MERN stack, AWS, SQL,
+          JavaScript, SASS, HTML and CSS. I highlighted my key technical skills that I will bring to your project.</p>
+        <div class="grid pt-md">
           <div class="skill mb-md">
             <figure class="img-container img-container--skill mb-sm">
-              <img 
-                srcset="assets/images/html-css-js-350w.png 350w, 
-                  assets/images/html-css-js-700w.png 700w" 
-                sizes="(min-width: 1024px) 700px, 
-                  350px" 
-                src="./assets/images/html-css-js-350w.png" 
-                alt="HTML, CSS and JS logoes"
-              >
+              <img src="./assets/images/html-css-js-400w.jpg" alt="HTML, CSS and JS logoes" height="200" width="400">
             </figure>
             <div>
               <h2>Front End Development</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
-                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <p>I use HTML, CSS and JavaScript to build attractive and responsive user interfaces for websites. During 
+                development I'm always thinking about best practices, SEO, accessibility and performance.</p>
             </div>
           </div>
           <div class="skill mb-md">
             <figure class="img-container img-container--skill mb-sm">
-              <img 
-                srcset="assets/images/react-350w.png 350w, 
-                  assets/images/react-700w.png 700w" 
-                sizes="(min-width: 1024px) 700px, 
-                  350px" 
-                src="./assets/images/react-350w.png" 
-                alt="React logo"
-              >
+              <img src="./assets/images/react-400w.jpg" alt="React logo" height="200" width="400">
             </figure>
             <div>
               <h2>React Development</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
-                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <p>React is an open-source, front end, JS library for building UIs or UI components. It offers graceful 
+                solutions to some of front-end programming's most persistent issues, allowing me to build dynamic and 
+                interactive web applications with ease.</p>
             </div>
           </div>
           <div class="skill mb-md">
             <figure class="img-container img-container--skill mb-sm">
-              <img 
-                srcset="assets/images/mern-stack-350w.png 350w, 
-                  assets/images/mern-stack-700w.png 700w" 
-                sizes="(min-width: 1024px) 700px, 
-                  350px" 
-                src="./assets/images/mern-stack-350w.png" 
-                alt="MongoDB, Express, React and Node logoes"
-              >
+              <img src="./assets/images/mern-stack-400w.jpg" alt="MongoDB, Express, React and Node logoes" height="200" width="400">
             </figure>
             <div>
               <h2>Full Stack Web Development</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
-                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <p>I use MongoDB Atlas, Express.js, React.js and Node.js to build web applications. The "MERN Stack Front To 
+                Back" is one of the most popular JavaScript stacks for building modern single-page web applications.</p>
             </div>
           </div>
           <div class="skill mb-md">
             <figure class="img-container img-container--skill mb-sm">
-              <img 
-                srcset="assets/images/sql-nosql-350w.png 350w, 
-                  assets/images/sql-nosql-700w.png 700w" 
-                sizes="(min-width: 1024px) 700px, 
-                  350px" 
-                src="./assets/images/sql-nosql-350w.png" 
-                alt="SQL and NoSQL concepts illustrated"
-              >
+              <img src="./assets/images/sql-nosql-400w.jpg" alt="SQL and NoSQL concepts illustrated" height="200" width="400">
             </figure>
             <div>
               <h2>Database Development</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
-                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <p>I'm comfortable in working with SQL databases and at the same time I'm studying NoSQL databases. Creating 
+                any kind of application and software is impossible for any organization without the database.</p>
             </div>
           </div>
           <div class="skill mb-md">
             <figure class="img-container img-container--skill mb-sm">
-              <img 
-                srcset="assets/images/git-github-350w.png 350w, 
-                  assets/images/git-github-700w.png 700w" 
-                sizes="(min-width: 1024px) 700px, 
-                  350px" 
-                src="./assets/images/git-github-350w.png" 
-                alt="Git and GitHub logoes"
-              >
+              <img src="./assets/images/git-github-400w.jpg" alt="Git and GitHub logoes" height="200" width="400">
             </figure>
             <div>
               <h2>Source Control</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
-                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <p>I use Git to track changes in my projects and maintain data integrity, while GitHub allows me to manage 
+                my Git repositories and make source code open-source. It's especially useful for distributed workflows.</p>
             </div>
           </div>
           <div class="skill mb-md">
             <figure class="img-container img-container--skill mb-sm">
-              <img 
-                srcset="assets/images/aws-350w.png 350w, 
-                  assets/images/aws-700w.png 700w" 
-                sizes="(min-width: 1024px) 700px, 
-                  350px" 
-                src="./assets/images/aws-350w.png" 
-                alt="AWS (Amazon Web Services) logo"
-              >
+              <img src="./assets/images/aws-400w.jpg" alt="AWS (Amazon Web Services) logo" height="200" width="400">
             </figure>
             <div>
               <h2>Cloud Computing</h2>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, porro expedita. Labore, ea et animi 
-                voluptates quaerat ab suscipit pariatur repellendus incidunt molestias voluptatem nihil quos, itaque</p>
+              <p>I utilize AWS in my own projects as it is the most popular and most mature cloud platform. Companies of all 
+                sizes and domains are now shifting their environments into Cloud for cost-saving and better scalability.</p>
             </div>
           </div>
         </div>
@@ -193,8 +159,8 @@
       <div class="container mx-auto">
         <div class="cto-content">
           <div class="cto-text">
-            <h1>Let's work together</h1>
-            <p>I am available for new exciting projects at any time</p>
+            <h1>Let's work together!</h1>
+            <p>I am available for fulltime or freelance projects. Hire me and get your project done.</p>
           </div>
           <a class="button" href="#contact">Hire me</a>
         </div>
@@ -205,12 +171,12 @@
       <div class="container mx-auto">
         <h1>PROJECTS</h1>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, officia?</p>
-        <div>
+        <div class="pt-md">
           <div class="project mb-md">
             <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <span class="strong">Live Demo</span>
-                <img src="./assets/images/hotpizza-1440w.jpg" alt="HOTPIZZA main page">
+                <img src="./assets/images/hotpizza-720w.jpg" alt="HOTPIZZA main page">
               </a>
             </figure>
             <div class="description">
@@ -220,7 +186,7 @@
               <hr>
               <p class="technologies">
                 <span class="strong">Technologies: </span>
-                HTML, JS, SASS, Google Maps JS API
+                HTML, JavaScript, SASS, Google Maps JS API
               </p>
               <div class="links-container">
                 <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
@@ -236,7 +202,7 @@
             <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <span class="strong">Live Demo</span>
-                <img src="./assets/images/lion-real-estate-1440w.jpg" alt="Lion Real Estate main page">
+                <img src="./assets/images/lion-real-estate-720w.jpg" alt="Lion Real Estate main page">
               </a>
             </figure>
             <div class="description">
@@ -246,7 +212,7 @@
               <hr>
               <p class="technologies">
                 <span class="strong">Technologies: </span>
-                HTML, CSS, JS, Realtor API, D3.js
+                HTML, CSS, JavaScript, Realtor API, D3.js
               </p>
               <div class="links-container">
                 <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
@@ -262,7 +228,7 @@
             <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <span class="strong">Live Demo</span>
-                <img src="./assets/images/bookshelves-1440w.jpg" alt="Bookshelves main page">
+                <img src="./assets/images/bookshelves-720w.jpg" alt="Bookshelves main page">
               </a>
             </figure>
             <div class="description">
@@ -288,7 +254,7 @@
             <figure class="img-container img-container--project mb-sm">
               <a href="http://" target="_blank" rel="noopener noreferrer">
                 <span class="strong">Live Demo</span>
-                <img src="" alt="My portfolio website main page">
+                <img src="./assets/images/developer-portfolio-720w.jpg" alt="My portfolio website main page">
               </a>
             </figure>
             <div class="description">
@@ -298,7 +264,7 @@
               <hr>
               <p class="technologies">
                 <span class="strong">Technologies: </span>
-                HTML, JS, SASS, AWS Lambda and SES
+                HTML, JavaScript, SASS, AWS Lambda and SES
               </p>
               <div class="links-container">
                 <a class="button" href="http://" target="_blank" rel="noopener noreferrer">
@@ -318,7 +284,7 @@
       <div class="contact mx-auto">
         <h1>GET IN TOUCH</h1>
         <p>Feel free to contact me at any time</p>
-        <form class="contact-form" action="submit.php" method="POST">
+        <form class="contact-form pt-md" action="submit.php" method="POST">
           <div class="name-and-email">
             <label for="name">Name
               <input type="text" name="name" required>
@@ -347,18 +313,9 @@
     <footer class="section bg--dark">
       <div class="container mx-auto">
         <div class="contact mb-md">
-          <div class="flex-column mb-sm">
-            <i class="fas fa-map-marked-alt contact"></i>
-            <span>London, England, UK</span>
-          </div>
-          <div class="flex-column mb-sm">
-            <i class="fas fa-phone contact"></i>
-            <a href="tel:+447832946403">783.294.6403</a>
-          </div>
-          <div class="flex-column mb-sm">
-            <i class="fas fa-paper-plane contact"></i>
-            <a href="mailto:petru.borta.p@gmail.com">petru.borta.t@gmail.com</a>
-          </div>
+          <p class="flex-column mb-sm"><i class="fas fa-map-marked-alt contact"></i><span class="strong">London, England, UK</span></p>
+          <a class="flex-column mb-sm" href="tel:+447832946403"><i class="fas fa-phone contact"></i><span>783.294.6403</span></a>
+          <a class="flex-column mb-sm" href="mailto:petru.borta.p@gmail.com"><i class="fas fa-paper-plane contact"></i><span>petru.borta.t@gmail.com</span></a>
         </div>
         <div class="text-align--center">
           <div class="social mb-sm">

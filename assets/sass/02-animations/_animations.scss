@@ -2,71 +2,8 @@
   50% { transform: translateY(1rem); }
 }
 
-input,
-textarea {
-  transition: 200ms box-shadow ease-in-out, 200ms background-color ease-in-out;
-}
-
-button,
-.button {
-  transition: 180ms all ease-in-out;
-}
-
-.navbar {
-  transition: transform 0.35s ease-out, background-color 0.25s ease-out;
-
-  .nav-wrapper {
-    transition: padding 0.25s ease-in-out;
-
-    .logo {
-      transition: height 0.35s ease-out, width 0.35s ease-out;
-    }
-
-    .menu-lines {
-      &,
-      &::before,
-      &::after {
-        transition: transform 0.25s ease-in-out;
-      }
-    }
-
-    nav {
-      transition: transform 0.25s ease-out;
-
-      a {
-        transition: color 0.25s ease-out;
-      }
-    }
-  }
-
-  @media screen and (max-width: 1023px) {
-    nav {
-      transform: translateX(100%);
-      transition: transform 0.5s ease-in-out;
-
-      &.open { 
-        transform: translateX(0);
-      }
-    }
-  }
-}
-
 #home {
   .arrow-down .fas { 
     animation: bounce 2s infinite;
-  }
-}
-
-.img-container--project {
-  &::before,
-  & .strong {
-    transition: opacity 0.15s ease-in-out;
-  }
-}
-
-footer {
-  .fas,
-  .flex-row {
-    transition: color 0.25s ease-in-out;
   }
 }

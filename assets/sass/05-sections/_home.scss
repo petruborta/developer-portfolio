@@ -1,6 +1,8 @@
 #home {
   min-height: 100vh;
   background-color: theme-color(secondary);
+  @include backgroundImage("../images/home-bg.png");
+  @include mediaQueries("home-bg");
 
   .container {
     position: relative;

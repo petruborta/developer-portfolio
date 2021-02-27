@@ -2,6 +2,7 @@ button,
 .button {
   color: theme-color(dark);
   font-family: $font-family;
+  font-weight: $strong-font-weight;
   line-height: 1.1;
   letter-spacing: 0.03rem;
   width: fit-content;
@@ -10,6 +11,7 @@ button,
   border: 2px solid theme-color(light);
   border-radius: $unit * 3;
   background-color: theme-color(light);
+  transition: 180ms all ease-in-out;
   cursor: pointer;
   @include flexContainer;
 

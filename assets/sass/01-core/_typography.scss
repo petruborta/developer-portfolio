@@ -66,6 +66,12 @@ nav > ul > li > a {
   color: theme-color(quaternary);
 }
 
+input,
+textarea {
+  font-family: $font-family;
+  color: theme-color(dark);
+}
+
 .sublead {
   font-family: $font-family;
   font-size: $h4-font-size;

@@ -25,14 +25,16 @@ $bgcolors: transparent, light, dark, light-gray, gray, dark-gray;
 @mixin mediaQueries($image) {
   @each $breakpoint in $breakpoints {
     @media screen and (min-width: #{$breakpoint}px) {
-      background-image: url("../../images/#{$image}-#{$breakpoint}w.jpg");
+      background-image: url("../images/#{$image}-#{$breakpoint}w.png");
     }
   }
 }
 
 @mixin backgroundImage($url, $x-position: center) {
   background-image: url($url);
-  background-position-x: $x-position;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 }
 

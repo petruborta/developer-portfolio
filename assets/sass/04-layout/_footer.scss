@@ -28,4 +28,9 @@ footer {
       margin-right: 1rem;
     }
   }
+
+  .fas,
+  .flex-row {
+    transition: color 0.25s ease-in-out;
+  }
 }
