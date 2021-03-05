@@ -74,36 +74,12 @@
     cursor: pointer;
 
     img {
-      height: auto;
+      height: calc(100% + 2px);
+      transition: transform 0.25s ease-out;
     }
 
-    &::before {
-      content: "";
-      height: 100%;
-      width: 100%;
-      position: absolute;
-      background-color: theme-color(dark);
-      opacity: 0;
-      z-index: 1;
-    }
-
-    &::before,
-    & .strong {
-      transition: opacity 0.15s ease-in-out;
-    }
-
-    &:hover:before,
-    &:hover .strong {
-      opacity: 0.8;
-    }
-
-    span {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%);
-      opacity: 0;
-      z-index: 2;
+    &:hover img {
+      transform: scale(1.05);
     }
   }
 }
@@ -119,4 +95,22 @@
 
 .invisible {
   display: none;
+}
+
+.error-container {
+  min-height: 100vh;
+  width: 100%;
+  max-width: 500px;
+  @include flexContainer;
+
+  .error {
+    @include flexContainer(column);
+
+    .error-code {
+      background-color: theme-color(dark);
+      @include backgroundImage("../images/error-bg.jpg");
+      background-clip: text;
+      -webkit-background-clip: text;
+    }
+  }
 }

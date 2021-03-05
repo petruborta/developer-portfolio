@@ -1,6 +1,6 @@
-import { contact_form_API_endpoint } from "./secrets.js";
+import { CONTACT_FORM_API_ENDPOINT } from "./secrets.js";
 
-const url = contact_form_API_endpoint;
+const url = CONTACT_FORM_API_ENDPOINT;
 const form = document.querySelector(".contact-form");
 const toast = form.querySelector(".toast");
 const submit = form.querySelector(".submit");
